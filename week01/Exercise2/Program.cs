@@ -15,24 +15,24 @@ class Program
         string rawMark = Console.ReadLine();
         int mark = int.Parse(rawMark);
 
-        if (mark > 90)
+        if (mark >= 90)
         {
             letter = "A";
             // Console.WriteLine($"Woow, {name} this is amazing, you got yourself an A");
         }
-        else if (mark > 80)
+        else if (mark >= 80)
         {
             // Console.WriteLine($"This is amazing {name}, you got yourself an B");
             letter = "B";
         }
 
-        else if (mark > 70)
+        else if (mark >= 70)
         {
             // Console.WriteLine($"Nice trial, I appreciate the effort {name}, you got yourself an C");
             letter = "C";
         }
 
-        else if (mark > 60)
+        else if (mark >= 60)
         {
             // Console.WriteLine($"You did not do so well {name}, you got yourself an D");
             letter = "D";
@@ -47,7 +47,7 @@ class Program
 
         Console.WriteLine($"{name}, your grade is {letter}");
 
-        if (letter != "F")
+        if (mark >= 70)
         {
             Console.WriteLine($"Congrats, {name}, you passed");
         }
@@ -58,3 +58,6 @@ class Program
         }
     }
 }
+
+
+
