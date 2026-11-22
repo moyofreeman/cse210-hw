@@ -4,9 +4,9 @@ public class Product
 {
     private string _productName;
     private string _productID;
-    private int _productPrice;
-    private int _productQuantity;
-    private int _totalProductCost;
+    private double _productPrice;
+    private double _productQuantity;
+    private double _totalProductCost;
 
 
     public Product(string productName, string productID, int productPrice, int productQuantity)
@@ -20,7 +20,7 @@ public class Product
 
 
 
-    public int ProductCost()
+    public double ProductCost()
     {
         _totalProductCost = _productPrice * _productQuantity;
         return _totalProductCost;

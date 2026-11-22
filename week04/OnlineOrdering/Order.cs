@@ -16,12 +16,12 @@ public class Order
         _products.Add(product);
     }
 
-    public int ProductCost()
+    public double ProductCost()
     {
         // should return total costs of ordered Items
         // either say productCost * quantity
         // Compute total for different products
-        int total = 0;
+        double total = 0;
 
         foreach (Product product in _products)
         {
@@ -31,7 +31,7 @@ public class Order
         return total;
     }
 
-    public int ShippingCost()
+    public double ShippingCost()
     {
         // check location
         // if location is US, then return $5
@@ -44,7 +44,7 @@ public class Order
         return 35;
     }
 
-    public int TotalCost()
+    public double TotalCost()
     {
         // ProductCost + ShippingCost
         // return value

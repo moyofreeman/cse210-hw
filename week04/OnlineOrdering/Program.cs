@@ -47,24 +47,6 @@ class Program
         order2.AddProduct(charger);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         Console.WriteLine("Customer: " + customer1.GetCustomerName());
 
         Console.WriteLine("Product 1 cost: " + laptop.ProductCost());
